@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hellow World CSS</title>
+    <script src="https://kit.fontawesome.com/e621d43c00.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- Alteração git exemplo -->
     <div>
         <a href="../..">Voltar para Aulas</a>
     </div>
@@ -42,6 +42,8 @@
         <span style="background: red;">Inline</span>
         <!-- Exemplo Tag Style -->
         <span class="minhaClasse">Tag Style</span>
+        <div class="minhaClasse" >Outro verde</div>
+        
         <style>
             .minhaClasse {
                 background: green;
@@ -161,7 +163,7 @@
         .propriedade {
             margin: auto;
             margin-bottom: 20px;
-            border: solid gray 1px;
+            border: solid blue 2px;
             padding: 0px 20px 20px 20px;
             width: 80%;
         }
@@ -201,15 +203,15 @@
         </div>
         <style>
             .exemplo-text {
-                font-family: "Times New Roman", Times, serif;
+                /* font-family: "Times New Roman", Times, serif; */
                 /* font-family: Arial, Helvetica, sans-serif; */
-                /* font-family: "Lucida Console", "Courier New", monospace; */
-                font-size: 15px;
+                font-family: "Lucida Console", "Courier New", monospace;
+                font-size: 13px;
                 color: tomato;
                 /* text-align: center; */
-                /* line-height: 30px; */
-                /* text-decoration: line-through; */
-                /* text-transform: uppercase; */
+                /* line-height: 10px; */
+                /* text-decoration: underline; */
+                /* text-transform: capitalize; */
                 /* letter-spacing: 3px; */
                 /* word-spacing: 10px; */
                 /* text-shadow: 2px 2px 2px black; */
@@ -235,7 +237,10 @@
             background-position
             background */
             .exemplo-background {
-                background: tomato;
+                /* background: tomato; */
+                /* background-image: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg"); */
+                background-repeat: unset;
+                /* background-size: contain; */
             }
         </style>
     </div>
@@ -251,9 +256,12 @@
 
         <style>
             .box {
-                width: 100px;
-                height: 30px;
-                border: 15px solid tomato;
+                width: 200px;
+                height: 50px;
+                /* border: 15px solid red; */
+                /* border-width: 15px 10px 2px 4px; */
+                border-style: solid;
+                border-color: red;
                 padding: 50px;
                 margin: 20px;
 
@@ -302,15 +310,18 @@
     <div id="propriedade-padding" class="propriedade">
         <h3>padding</h3>
         <p>Utilizado para alterar o espaçamento de acochoamento de um elemento</p>
-        <div class="exemplo-padding quadrado"></div>
+        <div class="exemplo-padding quadrado">
+            conteudo
+        </div>
         <style>
             .exemplo-padding {
-                padding-top: 10px;
+                border: solid black 2px;
+                /* padding-top: 10px;
                 padding-right: 10px;
                 padding-bottom: 10px;
-                padding-left: 10px;
+                padding-left: 10px; */
                 /* ou */
-                padding: 10px;
+                padding: 10px 10px;
             }
         </style>
     </div>
@@ -322,8 +333,8 @@
         <div class="quadrado exemplo-height-e-width"></div>
         <style>
             .exemplo-height-e-width {
-                height: 100px;
-                width: 100px;
+                height: 200px;
+                width: 50%;
             }
         </style>
     </div>
@@ -331,10 +342,12 @@
     <div id="propriedade-box-shadow" class="propriedade">
         <h3>box-shadow</h3>
         <p>Utilizado para adicionar sombra em um elemento</p>
-        <div class="quadrado exemplo-box-shadow"></div>
+        <div class="quadrado exemplo-box-shadow">
+        </div>
         <style>
             .exemplo-box-shadow {
-                box-shadow: 22px 27px 32px 13px #000000;
+                /* box-shadow: 22px 27px 32px 13px #000000; */
+                box-shadow: -34px 28px 67px 15px rgba(0,0,0,0.75);
             }
         </style>
     </div>

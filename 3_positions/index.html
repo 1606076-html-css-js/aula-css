@@ -17,16 +17,22 @@
         <h3>block</h3>
         <div>
             <!-- span = inline (n quebra linha) -->
-            <span class="quadrado class-block">Item</span>
-            <span class="quadrado class-block">Item</span>
-            <span class="quadrado class-block">Item</span>
+            <span class="class-block">Item</span>
+            <span class="class-block">Item</span>
+            <span class="class-block">Item</span>
+            <span class="class-block">Item</span>
+            <span class="class-block">Item</span>
+            <span class="class-block">Item</span>
+            <span class="class-block">Item</span>
+            <span class="class-block">Item</span>
+            <span class="class-block">Item</span>
         </div>
         <h3>inline-block</h3>
         <div>
             <!-- div = block (quebra linha) -->
-            <div class="quadrado class-inline-block">Item</div>
-            <div class="quadrado class-inline-block">Item</div>
-            <div class="quadrado class-inline-block">Item</div>
+            <div class="class-inline-block">Item</div>
+            <div class="class-inline-block">Item</div>
+            <div class="class-inline-block">Item</div>
         </div>
         <style>
             /* block, inline, inline-block */
@@ -35,7 +41,9 @@
             }
 
             .class-block {
-                display: block;
+                display: inline;
+                background-color: red;
+                border: solid black 2px;
             }
         </style>
     </div>
@@ -67,13 +75,15 @@
         <div>
             <div class="quadradao">
                 <div id="item-q02" class="item">Item</div>
+                <div id="item-q02" class="item">Item</div>
+                <div id="item-q02" class="item">Item</div>
             </div>
         </div>
         <style>
             #item-q02 {
                 position: relative;
-                left: 80px;
-                top: 50px;
+                left: 10px;
+                top: -50px;
             }
         </style>
     </div>
@@ -88,8 +98,11 @@
             </div>
         </div>
         <style>
+            .propriedade {
+                position: static;
+            }
             .pai {
-                position: relative;
+                /* position: relative; */
             }
 
             #filho {
