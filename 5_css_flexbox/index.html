@@ -16,7 +16,7 @@
 
     <div>
         <h1>FlexBox</h1>
-        <p>Usado para posicionar elementos dentro de um layout</p>
+        <p>Usado para posicionar elementos (items) dentro de um elemento (container)</p>
         <p>Pode ser escolhido trabalhar com linhas OU colunas</p>
     </div>
     <p class="topic">Dividir em duas categorias:</p>
@@ -72,7 +72,7 @@
                 </li>
                 <li>
                     <p>flex-grow:</p>
-                    <p>Determina o quanto o item irá crescer em comparação aos outros items do caontainer</p>
+                    <p>Determina o quanto o item irá crescer em comparação aos outros items do container</p>
                 </li>
                 <li>
                     <p>flex-shrink:</p>
@@ -103,7 +103,9 @@
             <p>Verde: Container | Bege: Items do Container</p>
         </div>
 
+        <!-- Flex container -->
         <div class="flex-container-e00">
+            <!-- Flex Items -->
             <div>Item 1</div>
             <div>Item 2</div>
             <div>Item 3</div>
@@ -115,14 +117,13 @@
         </div>
 
         <style>
-
             .flex-container-e00 {
-                margin-left: 10px;
                 background: darkolivegreen;
-                padding: 2px;
+                margin-left: 10px;
+                padding: 5px;
                 text-align: center;
                 /* width: 50%; */
-                border-right: solid 12px gray;
+                border-right: solid 12px red;
 
                 /* Daqui pra baixo é o que importa */
                 display: flex;
@@ -150,7 +151,7 @@
         <div class="flex-container-e01">
             <div>Item 1</div>
             <div>Item 2</div>
-            <div>Item 3</div>
+            <div class="item-menor">M</div>
             <div>Item 4</div>
             <div>Item 5</div>
             <div>Item 6</div>
@@ -174,11 +175,11 @@
 
             .flex-container-e01 {
                 /* Estilo básico do container */
-                margin-left: 10px;
                 background: darkolivegreen;
+                margin-left: 10px;
                 padding: 2px;
                 text-align: center;
-                width: 50%;
+                width: 70%;
                 height: 200px;
                 border-right: solid 12px gray;
 
@@ -186,7 +187,7 @@
                 display: flex;
 
                 /* Direção [row|column] */
-                /* flex-direction: row; */
+                flex-direction: row;
                 /* flex-direction: row-reverse; */
                 /* flex-direction: column; */
                 /* flex-direction: column-reverse; */
@@ -198,26 +199,25 @@
                 /* flex-wrap: wrap-reverse; */
 
                 /* Espaçamento entre os items */
-                gap: 2px;
+                gap: 10px;
 
                 /* Alinhamento de items (Main Axis)*/
                 /* justify-content: flex-start; */
                 justify-content: center;
                 /* justify-content: flex-end; */
-                /* justify-content: flex-end; */
                 /* justify-content: space-between; */
                 /* justify-content: space-around; */
-
-                /* Alinhamento de linhas (items em multilinhas)  */
+                
+                /* Alinhamento de items (Cross Axis)*/
                 /* align-content: flex-start; */
                 align-content: center;
                 /* align-content: flex-end; */
                 /* align-content: space-between; */
                 /* align-content: space-around; */
 
-                /* Alinhamento de items (Cross Axis)*/
+                /* Alinhamento de linhas (items NA linha)  */
                 /* align-items: flex-start; */
-                /* align-items: center; */
+                align-items: center;
                 /* align-items: flex-end; */
             }
 
@@ -226,6 +226,11 @@
                 background: wheat;
                 height: 40px;
                 width: 40px;
+            }
+
+            .item-menor {
+                height: 20px !important;
+                background-color: red !important;
             }
         </style>
     </div>
